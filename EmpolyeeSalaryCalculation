@@ -1,0 +1,16 @@
+interface Salary
+{
+    double calculater(int basicSalary);
+}
+class EmpolyeeSalary
+{
+    public static void main(String[] args)
+    {
+        Salary s=(basic)->{
+            double hrs=basic*0.20;
+            double da=basic*0.30;
+            return basic+hrs+da;
+        };
+        System.out.println(s.calculater(90));
+    }
+}
